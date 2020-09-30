@@ -3,9 +3,13 @@ from arithmetic import (add, subtract, multiply, divide, square, cube, power, mo
 
 print("Hey guys!")
 # Replace this with your codede
+
+
 while result == None:
     math_problem = input("")
     tokens = math_problem.split(' ')
+
+    result = None
 
     math_operator = tokens[0]
     nums1 = tokens[1]
@@ -13,21 +17,31 @@ while result == None:
         nums2 = tokens[2]
 
     if math_operator == "+":
-        return add (nums1,nums2)
+        result = add (nums1,nums2)
+        return result
     elif math_operator == "-":
-        return subtract (nums1.nums2)
+        result = subtract (nums1,nums2)
+        return result
     elif math_operator == "*":
-        return multiply (nums1,nums2)
+        result = multiply (nums1,nums2)
+        return result
     elif math_operator == "/":
-        return divide (nums1,nums2)
+        result = divide (nums1,nums2)
+        return result
     elif math_operator == "**2":
-        return cube (nums1)
+        result = cube (nums1)
+        return result
     elif math_operator == "**3":
-        return square (nums1)
+        result = square (nums1)
+        return result
     elif math_operator== "**":
-        return power (nums1,nums2)
+        result = power (nums1,nums2)
+        return result
     elif math_operator== '%':
-        return mod (nums1,nums2)
+        result = mod (nums1,nums2)
+        return result
+
+    print 
     
 
 
